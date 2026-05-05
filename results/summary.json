@@ -1,0 +1,265 @@
+{
+  "fdm": {
+    "reference_unknowns": 9604,
+    "reference_nonzeros": 47628,
+    "relative_l2_error": 0.03849815561856524,
+    "residual": 2.435015476710885e-15,
+    "convergence_order": 0.9737440162367981,
+    "convergence_table": [
+      {
+        "n": 24,
+        "h": 0.17391304347826086,
+        "unknowns": 484,
+        "nonzeros": 2332,
+        "relative_l2_error": 0.15619494801177422,
+        "linear_residual": 8.584814701558031e-16,
+        "energy_J_per_m": 2.4500366929042394e-07
+      },
+      {
+        "n": 32,
+        "h": 0.12903225806451613,
+        "unknowns": 900,
+        "nonzeros": 4380,
+        "relative_l2_error": 0.11804862304016134,
+        "linear_residual": 1.2074977109170983e-15,
+        "energy_J_per_m": 2.6184275904357304e-07
+      },
+      {
+        "n": 48,
+        "h": 0.0851063829787234,
+        "unknowns": 2116,
+        "nonzeros": 10396,
+        "relative_l2_error": 0.07934398588856101,
+        "linear_residual": 1.423088690868005e-15,
+        "energy_J_per_m": 2.853113756610882e-07
+      },
+      {
+        "n": 64,
+        "h": 0.06349206349206349,
+        "unknowns": 3844,
+        "nonzeros": 18972,
+        "relative_l2_error": 0.05977376196302637,
+        "linear_residual": 1.7917844331185025e-15,
+        "energy_J_per_m": 3.0183029971028575e-07
+      },
+      {
+        "n": 88,
+        "h": 0.04597701149425287,
+        "unknowns": 7396,
+        "nonzeros": 36636,
+        "relative_l2_error": 0.04363393172382734,
+        "linear_residual": 2.053132135457791e-15,
+        "energy_J_per_m": 3.200267165363883e-07
+      },
+      {
+        "n": 112,
+        "h": 0.036036036036036036,
+        "unknowns": 12100,
+        "nonzeros": 60060,
+        "relative_l2_error": 0.03436476990515507,
+        "linear_residual": 2.3442863580319537e-15,
+        "energy_J_per_m": 3.3376017872253044e-07
+      }
+    ],
+    "boundary_sensitivity": [
+      {
+        "case": "top_drive",
+        "min_potential": 0.0,
+        "max_potential": 100.0,
+        "energy_J_per_m": 3.273107017912599e-07,
+        "residual": 2.435015476710885e-15
+      },
+      {
+        "case": "opposed_plates",
+        "min_potential": -100.0,
+        "max_potential": 100.0,
+        "energy_J_per_m": 6.74170449583695e-07,
+        "residual": 2.1174103153758273e-15
+      },
+      {
+        "case": "side_drive",
+        "min_potential": 0.0,
+        "max_potential": 100.0,
+        "energy_J_per_m": 3.2731070179125984e-07,
+        "residual": 2.335391571416325e-15
+      },
+      {
+        "case": "corner_bias",
+        "min_potential": 0.0,
+        "max_potential": 100.0,
+        "energy_J_per_m": 2.503702878437387e-07,
+        "residual": 2.65982685807345e-15
+      }
+    ]
+  },
+  "bem": {
+    "isolated_plate": [
+      {
+        "level": 0,
+        "panels": 13,
+        "capacitance_F": 1.8065233745229755e-11,
+        "condition_number": 10.826973979271626
+      },
+      {
+        "level": 1,
+        "panels": 52,
+        "capacitance_F": 2.439971424429162e-11,
+        "condition_number": 16.17286274530973
+      },
+      {
+        "level": 2,
+        "panels": 208,
+        "capacitance_F": 2.999828428709114e-11,
+        "condition_number": 26.58587479604684
+      },
+      {
+        "level": 3,
+        "panels": 832,
+        "capacitance_F": 3.340540175680804e-11,
+        "condition_number": null
+      },
+      {
+        "level": 4,
+        "panels": 3328,
+        "capacitance_F": 3.526091860374575e-11,
+        "condition_number": null
+      }
+    ],
+    "parallel_plates": [
+      {
+        "level": 0,
+        "panels": 26,
+        "capacitance_F": 2.3170353866997526e-11,
+        "condition_number": 15.930148566619668
+      },
+      {
+        "level": 1,
+        "panels": 104,
+        "capacitance_F": 3.1937412386960397e-11,
+        "condition_number": 24.01394824616529
+      },
+      {
+        "level": 2,
+        "panels": 416,
+        "capacitance_F": 3.614124205524129e-11,
+        "condition_number": null
+      },
+      {
+        "level": 3,
+        "panels": 1664,
+        "capacitance_F": 3.8198231991456596e-11,
+        "condition_number": null
+      },
+      {
+        "level": 4,
+        "panels": 6656,
+        "capacitance_F": 3.921549573508298e-11,
+        "condition_number": null
+      }
+    ]
+  },
+  "research_plus": {
+    "solver_scaling": [
+      {
+        "method": "direct",
+        "n": 28,
+        "unknowns": 676,
+        "nonzeros": 3276,
+        "time_s": 0.0015421959997183876,
+        "residual": 1.0643545127581056e-15,
+        "energy_J_per_m": 2.5404999923743236e-07
+      },
+      {
+        "method": "cg",
+        "n": 28,
+        "unknowns": 676,
+        "nonzeros": 3276,
+        "time_s": 0.0016001420008251444,
+        "residual": 9.536690945513605e-09,
+        "info": 0,
+        "energy_J_per_m": 2.540499992098514e-07
+      },
+      {
+        "method": "direct",
+        "n": 36,
+        "unknowns": 1156,
+        "nonzeros": 5644,
+        "time_s": 0.002417136998701608,
+        "residual": 1.3632095561345325e-15,
+        "energy_J_per_m": 2.686875100968745e-07
+      },
+      {
+        "method": "cg",
+        "n": 36,
+        "unknowns": 1156,
+        "nonzeros": 5644,
+        "time_s": 0.0022728919993824093,
+        "residual": 8.56545965518257e-09,
+        "info": 0,
+        "energy_J_per_m": 2.686875100774087e-07
+      },
+      {
+        "method": "direct",
+        "n": 48,
+        "unknowns": 2116,
+        "nonzeros": 10396,
+        "time_s": 0.004896661999737262,
+        "residual": 1.423088690868005e-15,
+        "energy_J_per_m": 2.853113756610882e-07
+      },
+      {
+        "method": "cg",
+        "n": 48,
+        "unknowns": 2116,
+        "nonzeros": 10396,
+        "time_s": 0.03761038100128644,
+        "residual": 8.306194672802618e-09,
+        "info": 0,
+        "energy_J_per_m": 2.853113756653173e-07
+      },
+      {
+        "method": "direct",
+        "n": 64,
+        "unknowns": 3844,
+        "nonzeros": 18972,
+        "time_s": 0.011464347999208258,
+        "residual": 1.7917844331185025e-15,
+        "energy_J_per_m": 3.0183029971028575e-07
+      },
+      {
+        "method": "cg",
+        "n": 64,
+        "unknowns": 3844,
+        "nonzeros": 18972,
+        "time_s": 0.053288277000319795,
+        "residual": 9.566815204020966e-09,
+        "info": 0,
+        "energy_J_per_m": 3.018302997304274e-07
+      },
+      {
+        "method": "direct",
+        "n": 80,
+        "unknowns": 6084,
+        "nonzeros": 30108,
+        "time_s": 0.019237260999943828,
+        "residual": 2.001912497120757e-15,
+        "energy_J_per_m": 3.1458889911605605e-07
+      },
+      {
+        "method": "cg",
+        "n": 80,
+        "unknowns": 6084,
+        "nonzeros": 30108,
+        "time_s": 0.07214473699968948,
+        "residual": 8.453395450467187e-09,
+        "info": 0,
+        "energy_J_per_m": 3.1458889912903117e-07
+      }
+    ],
+    "l_shape": {
+      "unknowns": 5808,
+      "nonzeros": 28688,
+      "residual": 1.4056213442700125e-15
+    }
+  }
+}
